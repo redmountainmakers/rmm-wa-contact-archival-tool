@@ -1,10 +1,11 @@
-
 import json
 import requests
 import base64
 import logging
 from datetime import datetime, timezone
 from dateutil import parser
+
+api_key = os.environ.get("WA_API_KEY")
 
 def get_access_token(api_key):
     """Obtains and returns an access token for the Wild Apricot API."""
