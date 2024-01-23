@@ -307,7 +307,7 @@ logging.info("Starting archival script")
 
 num_contacts = num_contacts(access_token)
 
-contact_target = 200
+contact_target = 190
 
 removal_target = num_contacts - contact_target
 
