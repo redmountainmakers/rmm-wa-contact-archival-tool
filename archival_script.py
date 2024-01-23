@@ -1,7 +1,9 @@
+import os
 import json
 import requests
 import base64
 import logging
+import subprocess
 from datetime import datetime, timezone
 from dateutil import parser
 
@@ -52,7 +54,6 @@ def get_contact_info(contact_id, access_token):
         return
 
     contact_details = contact_response.json()
-    print(contact_details)
 
     # Get the email address, first name, and membership status from the contact details
     email = contact_details.get('Email', 'Unknown')
@@ -136,7 +137,7 @@ def num_members(access_token):
     contacts_response = requests.get(contacts_url, headers=headers)
 
     if contacts_response.status_code != 200:
-        print(f"Error: Unable to retrieve contacts. Status code: {contacts_response.status_code}")
+        logging.error(f"Error: Unable to retrieve contacts. Status code: {contacts_response.status_code}")
         return None
     else:
         return len(contacts_response.json().get("Contacts", []))
@@ -156,7 +157,7 @@ def num_contacts(access_token):
     contacts_response = requests.get(contacts_url, headers=headers)
 
     if contacts_response.status_code != 200:
-        print(f"Error: Unable to retrieve contacts. Status code: {contacts_response.status_code}")
+        logging.error(f"Error: Unable to retrieve contacts. Status code: {contacts_response.status_code}")
         return None
     else:
         return len(contacts_response.json().get("Contacts", []))
@@ -176,8 +177,6 @@ def contacts_w_registrations(access_token):
     contacts_response = requests.get(contacts_url, headers=headers)
 
     contacts = contacts_response.json().get("Contacts", [])
-
-    #print(len(contacts))
     
     contacts_w_registration = []
 
@@ -188,7 +187,7 @@ def contacts_w_registrations(access_token):
             contacts_w_registration.append(contact['Id'])
 
     if contacts_response.status_code != 200:
-        print(f"Error: Unable to retrieve contacts. Status code: {contacts_response.status_code}")
+        logging.error(f"Error: Unable to retrieve contacts. Status code: {contacts_response.status_code}")
         return None
     else:
         return len(contacts_w_registration)
@@ -208,7 +207,7 @@ def contacts_w_balance(access_token):
     contacts_response = requests.get(contacts_url, headers=headers)
 
     if contacts_response.status_code != 200:
-        print(f"Error: Unable to retrieve contacts. Status code: {contacts_response.status_code}")
+        logging.error(f"Error: Unable to retrieve contacts. Status code: {contacts_response.status_code}")
         return None
     else:
         return len(contacts_response.json().get("Contacts", []))
@@ -241,7 +240,7 @@ def return_archival_candidates(access_token):
             archival_candidates.append(contact['Id'])
 
     if contacts_response.status_code != 200:
-        print(f"Error: Unable to retrieve contacts. Status code: {contacts_response.status_code}")
+        logging.error(f"Error: Unable to retrieve contacts. Status code: {contacts_response.status_code}")
         return None
     else:
         return archival_candidates
@@ -297,7 +296,14 @@ def get_last_login_date(contact):
                 return last_login_date
     return datetime.min.replace(tzinfo=timezone.utc)
 
+def cleanup_log_file():
+    subprocess.run(['git', 'add', log_file_path])
+    subprocess.run(['git', 'commit', '-m', 'Processed events from Wild Apricot to discord'])
+    subprocess.run(['git', 'push'])
+
 access_token = get_access_token(api_key)
+
+logging.info("Starting archival script")
 
 num_contacts = num_contacts(access_token)
 
@@ -306,9 +312,10 @@ contact_target = 200
 removal_target = num_contacts - contact_target
 
 if num_contacts > contact_target:
-    print(f"Currently at {num_contacts} contacts. Target is {contact_target}, attempting to remove {removal_target} contacts.")
+    logging.info(f"Currently at {num_contacts} contacts. Target is {contact_target}, attempting to remove {removal_target} contacts.")
 else:
-    print(f"Currently at {num_contacts} contacts. Target is {contact_target}, no action required. Exiting")
+    logging.info(f"Currently at {num_contacts} contacts. Target is {contact_target}, no action required. Exiting")
+    cleanup_log_file()
     exit()
 
 number_of_members = num_members(access_token)
@@ -322,17 +329,27 @@ minimum_contacts = number_of_members + num_non_members_with_a_balance + num_non_
 contact_margin = contact_target - minimum_contacts - 10 #10 is a buffer
 
 if contact_margin < 0:
-    print(f"Warning: Currently at {minimum_contacts} contacts. Target is {contact_target}, we have more contacts than the target. Need to consider upgrading our plan.")
+    logging.info(f"Warning: Currently at {minimum_contacts} contacts. Target is {contact_target}, we have more contacts than the target. Need to consider upgrading our plan.")
+    cleanup_log_file()
     exit()
 else:
-    print(f"Currently at {minimum_contacts} minimum contacts. Target is {contact_target}, we have {contact_margin} contacts margin.\nContinuing to remove {removal_target} contacts.")
+    logging.info(f"Currently at {minimum_contacts} minimum contacts. Target is {contact_target}, we have {contact_margin} contacts margin.\nContinuing to remove {removal_target} contacts.")
 
-print(f"Minimum contact makeup:\nNumber of members: {number_of_members}\nNumber of non-members with a balance: {num_non_members_with_a_balance}\nNumber of non-members with future registrations: {num_non_members_future_registration}")
+logging.info(f"Minimum contact makeup:\nNumber of members: {number_of_members}\nNumber of non-members with a balance: {num_non_members_with_a_balance}\nNumber of non-members with future registrations: {num_non_members_future_registration}")
 
 archival_candidates = return_archival_candidates(access_token)
 
-print(len(archival_candidates))
+logging.info(f"{len(archival_candidates)} total candidates available for archive")
+
+num = 0
 
 for contact in archival_candidates:
-    print(f"Archiving contact {contact}")
+    num += 1
+    if num >= removal_target:
+        logging.info("Exiting after removing target contacts")
+        cleanup_log_file()
+        exit()
+    logging.info(f"Archiving contact {contact}")
     set_contact_to_archived(contact, access_token)
+
+cleanup_log_file()
