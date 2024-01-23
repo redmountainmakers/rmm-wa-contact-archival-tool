@@ -7,6 +7,9 @@ from dateutil import parser
 
 api_key = os.environ.get("WA_API_KEY")
 
+log_file_path = 'wa_contact_archive.log'
+logging.basicConfig(level=logging.INFO, filename= log_file_path, filemode='a', format='%(asctime)s - %(levelname)s - %(message)s')
+
 def get_access_token(api_key):
     """Obtains and returns an access token for the Wild Apricot API."""
     auth_url = 'https://oauth.wildapricot.org/auth/token'
