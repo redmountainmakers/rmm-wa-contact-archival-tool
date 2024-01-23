@@ -1,0 +1,10 @@
+2024-01-23 04:04:57,152 - INFO - Starting archival script
+2024-01-23 04:04:58,588 - INFO - Currently at 201 contacts. Target is 200, attempting to remove 1 contacts.
+2024-01-23 04:05:32,623 - INFO - Currently at 153 minimum contacts. Target is 200, we have 37 contacts margin.
+Continuing to remove 1 contacts.
+2024-01-23 04:05:32,623 - INFO - Minimum contact makeup:
+Number of members: 82
+Number of non-members with a balance: 62
+Number of non-members with future registrations: 9
+2024-01-23 04:06:05,997 - INFO - 46 total candidates available for archive
+2024-01-23 04:06:05,997 - INFO - Exiting after removing target contacts
