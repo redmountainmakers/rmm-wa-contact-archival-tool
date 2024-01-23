@@ -37,7 +37,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run script
-        run: python email_events.py
+        run: python archival_script.py
         env:
           WA_API_KEY: ${{ secrets.WA_API_KEY }}
           
