@@ -345,7 +345,7 @@ num = 0
 
 for contact in archival_candidates:
     num += 1
-    if num >= removal_target:
+    if num > removal_target:
         logging.info("Exiting after removing target contacts")
         cleanup_log_file()
         exit()
