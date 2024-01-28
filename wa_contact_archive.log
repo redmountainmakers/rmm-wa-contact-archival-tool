@@ -81,3 +81,16 @@ Number of non-members with future registrations: 15
 2024-01-26 08:05:06,871 - INFO - Exiting after removing target contacts
 2024-01-27 08:03:43,809 - INFO - Starting archival script
 2024-01-27 08:03:46,131 - INFO - Currently at 190 contacts. Target is 190, no action required. Exiting
+2024-01-28 08:04:27,314 - INFO - Starting archival script
+2024-01-28 08:04:29,951 - INFO - Currently at 193 contacts. Target is 190, attempting to remove 3 contacts.
+2024-01-28 08:05:21,594 - INFO - Currently at 160 minimum contacts. Target is 190, we have 20 contacts margin.
+Continuing to remove 3 contacts.
+2024-01-28 08:05:21,594 - INFO - Minimum contact makeup:
+Number of members: 83
+Number of non-members with a balance: 62
+Number of non-members with future registrations: 15
+2024-01-28 08:05:44,043 - INFO - 27 total candidates available for archive
+2024-01-28 08:05:44,043 - INFO - Archiving contact 71266477
+2024-01-28 08:05:45,613 - INFO - Archiving contact 71368067
+2024-01-28 08:05:46,944 - INFO - Archiving contact 71408051
+2024-01-28 08:05:48,396 - INFO - Exiting after removing target contacts
