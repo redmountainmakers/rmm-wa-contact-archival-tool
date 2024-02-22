@@ -1,6 +1,6 @@
 # RMM WA Contact Archival Tool
 
-The RMM WA Contact Archival Tool is a GitHub repository designed for automating the archival of contacts from Wild Apricot (WA) using GitHub Actions as a scheduled job (cron job). This tool facilitates regular backups of contact data, ensuring that a historical record is maintained and can be accessed as needed.
+The RMM WA Contact Archival Tool is a GitHub repository designed for automating the archival of contacts from Wild Apricot (WA) using GitHub Actions as a scheduled job (cron job). This tool facilitates archival of contacts so we can stay below our billing contact count without manual intervention (https://www.wildapricot.com/pricing).  
 
 ## Features
 
