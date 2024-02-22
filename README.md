@@ -28,7 +28,7 @@ The RMM WA Contact Archival Tool is a GitHub repository designed for automating 
    For secure authentication with Wild Apricot's API, you need to set up the following secrets in your GitHub repository settings:
    
    - `WA_API_KEY`: Your Wild Apricot API key.
-   - `WA_ACCOUNT_ID`: Your Wild Apricot account ID.
+   - `GH_PAT`: A Github personal access token for executing Github actions.
    
    Navigate to your repository settings, then to `Secrets`, and add these secrets accordingly.
 
