@@ -721,3 +721,5 @@ Number of non-members with a balance: 73
 Number of non-members with future registrations: 11
 2024-03-25 08:05:55,587 - INFO - 1 total candidates available for archive
 2024-03-25 08:05:55,587 - INFO - Archiving contact 73791204
+2024-03-26 08:04:11,827 - INFO - Starting archival script
+2024-03-26 08:04:14,114 - INFO - Currently at 190 contacts. Target is 190, no action required. Exiting
