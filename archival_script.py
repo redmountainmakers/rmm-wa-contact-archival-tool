@@ -4,7 +4,7 @@ import requests
 import base64
 import logging
 import subprocess
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from dateutil import parser
 
 api_key = os.environ.get("WA_API_KEY")
@@ -278,7 +278,9 @@ def has_upcoming_event_registrations(contact_id, access_token):
         if event_start_date:
             event_start_date = parser.parse(event_start_date)
             current_time = datetime.now(event_start_date.tzinfo)
-            if event_start_date > current_time:
+            #shifts back by 4 days to allow time for class followup emails to be sent before archival
+            archival_threshold = archival_threshold = current_time - timedelta(days=4)
+            if event_start_date > archival_threshold:
                 return True
 
     return False
@@ -307,7 +309,7 @@ logging.info("Starting archival script")
 
 num_contacts = num_contacts(access_token)
 
-contact_target = 190
+contact_target = 200
 
 removal_target = num_contacts - contact_target
 
