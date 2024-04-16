@@ -899,3 +899,5 @@ Number of non-members with future registrations: 15
 2024-04-15 08:04:02,569 - ERROR - Error: Unable to update contact. Status code: 400
 2024-04-16 00:24:52,747 - INFO - Starting archival script
 2024-04-16 00:24:54,805 - INFO - Currently at 188 contacts. Target is 190, no action required. Exiting
+2024-04-16 08:03:37,790 - INFO - Starting archival script
+2024-04-16 08:03:40,039 - INFO - Currently at 100 contacts. Target is 190, no action required. Exiting
