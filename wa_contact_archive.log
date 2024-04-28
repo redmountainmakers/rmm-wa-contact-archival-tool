@@ -974,3 +974,13 @@ Number of non-members with future registrations: 17
 2024-04-27 08:05:02,158 - INFO - Archiving contact 73844014
 2024-04-27 08:05:04,346 - INFO - Archiving contact 74723623
 2024-04-27 08:05:06,926 - INFO - Exiting after removing target contacts
+2024-04-28 08:03:30,269 - INFO - Starting archival script
+2024-04-28 08:03:32,596 - INFO - Currently at 191 contacts. Target is 190, attempting to remove 1 contacts.
+2024-04-28 08:03:46,819 - INFO - Currently at 136 minimum contacts. Target is 190, we have 44 contacts margin.
+Continuing to remove 1 contacts.
+2024-04-28 08:03:46,819 - INFO - Minimum contact makeup:
+Number of members: 86
+Number of non-members with a balance: 32
+Number of non-members with future registrations: 18
+2024-04-28 08:03:56,589 - INFO - 1 total candidates available for archive
+2024-04-28 08:03:56,589 - INFO - Archiving contact 74800736
