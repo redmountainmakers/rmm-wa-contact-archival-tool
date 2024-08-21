@@ -2351,3 +2351,20 @@ Number of members: 77
 Number of non-members with a balance: 24
 Number of non-members with future registrations: 31
 2024-08-20 08:05:56,542 - INFO - 0 total candidates available for archive
+2024-08-21 08:04:17,245 - INFO - Starting archival script
+2024-08-21 08:04:19,773 - INFO - Currently at 210 contacts. Target is 190, attempting to remove 20 contacts.
+2024-08-21 08:04:38,233 - INFO - Currently at 126 minimum contacts. Target is 190, we have 54 contacts margin.
+Continuing to remove 20 contacts.
+2024-08-21 08:04:38,233 - INFO - Minimum contact makeup:
+Number of members: 77
+Number of non-members with a balance: 24
+Number of non-members with future registrations: 25
+2024-08-21 08:05:22,481 - ERROR - Error: Unable to retrieve account details. Status code: 500
+2024-08-21 08:05:26,909 - INFO - 7 total candidates available for archive
+2024-08-21 08:05:26,909 - INFO - Archiving contact 66983181
+2024-08-21 08:05:28,182 - INFO - Archiving contact 76146616
+2024-08-21 08:05:29,265 - INFO - Archiving contact 76228845
+2024-08-21 08:05:30,569 - INFO - Archiving contact 76229829
+2024-08-21 08:05:32,038 - INFO - Archiving contact 76306771
+2024-08-21 08:05:33,148 - INFO - Archiving contact 76397631
+2024-08-21 08:05:34,393 - INFO - Archiving contact 75619593
