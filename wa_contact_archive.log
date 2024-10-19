@@ -3013,3 +3013,12 @@ Number of non-members with future registrations: 31
 2024-10-19 04:26:04,088 - INFO - Archiving contact 77148802
 2024-10-19 04:26:06,299 - INFO - Archiving contact 75951073
 2024-10-19 04:26:07,741 - INFO - Archiving contact 77124771
+2024-10-19 08:04:10,771 - INFO - Starting archival script
+2024-10-19 08:04:13,669 - INFO - Currently at 210 contacts. Target is 190, attempting to remove 20 contacts.
+2024-10-19 08:04:47,023 - INFO - Currently at 125 minimum contacts. Target is 190, we have 55 contacts margin.
+Continuing to remove 20 contacts.
+2024-10-19 08:04:47,023 - INFO - Minimum contact makeup:
+Number of members: 78
+Number of non-members with a balance: 16
+Number of non-members with future registrations: 31
+2024-10-19 08:05:17,023 - INFO - 0 total candidates available for archive
