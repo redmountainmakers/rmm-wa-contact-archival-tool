@@ -3639,3 +3639,14 @@ Number of non-members with future registrations: 23
 2024-12-12 08:06:05,669 - INFO - Archiving contact 77773982
 2024-12-12 08:06:07,715 - INFO - Archiving contact 77896242
 2024-12-12 08:06:09,717 - INFO - Archiving contact 77896384
+2024-12-13 08:04:57,941 - INFO - Starting archival script
+2024-12-13 08:05:00,200 - INFO - Currently at 224 contacts. Target is 190, attempting to remove 34 contacts.
+2024-12-13 08:05:22,093 - INFO - Currently at 140 minimum contacts. Target is 190, we have 40 contacts margin.
+Continuing to remove 34 contacts.
+2024-12-13 08:05:22,093 - INFO - Minimum contact makeup:
+Number of members: 88
+Number of non-members with a balance: 25
+Number of non-members with future registrations: 27
+2024-12-13 08:05:38,935 - INFO - 1 total candidates available for archive
+2024-12-13 08:05:38,935 - INFO - Archiving contact 75732600
+2024-12-13 08:05:39,849 - ERROR - Error: Unable to update contact. Status code: 400
