@@ -3801,3 +3801,16 @@ Number of non-members with future registrations: 28
 2024-12-23 08:06:08,631 - ERROR - Error: Unable to update contact. Status code: 400
 2024-12-23 08:06:08,631 - INFO - Archiving contact 76812188
 2024-12-23 08:06:10,194 - ERROR - Error: Unable to update contact. Status code: 400
+2024-12-24 08:04:39,124 - INFO - Starting archival script
+2024-12-24 08:04:41,112 - INFO - Currently at 233 contacts. Target is 190, attempting to remove 43 contacts.
+2024-12-24 08:04:58,315 - INFO - Currently at 149 minimum contacts. Target is 190, we have 31 contacts margin.
+Continuing to remove 43 contacts.
+2024-12-24 08:04:58,315 - INFO - Minimum contact makeup:
+Number of members: 87
+Number of non-members with a balance: 34
+Number of non-members with future registrations: 28
+2024-12-24 08:05:13,973 - INFO - 2 total candidates available for archive
+2024-12-24 08:05:13,973 - INFO - Archiving contact 75732600
+2024-12-24 08:05:14,638 - ERROR - Error: Unable to update contact. Status code: 400
+2024-12-24 08:05:14,638 - INFO - Archiving contact 76812188
+2024-12-24 08:05:15,323 - ERROR - Error: Unable to update contact. Status code: 400
