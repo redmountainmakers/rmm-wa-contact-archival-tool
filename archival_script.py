@@ -238,7 +238,7 @@ def return_archival_candidates(access_token):
         upcoming_event = has_upcoming_event_registrations(contact['Id'], access_token)
         
         if not upcoming_event:
-            balance = next((field['Value'] for field in data['FieldValues'] if field['FieldName'] == 'Balance'), '0.0')
+            balance = next((field['Value'] for field in contact['FieldValues'] if field['FieldName'] == 'Balance'), '0.0')
             print(balance)
             if balance == '0.0':
                 archival_candidates.append(contact['Id'])
