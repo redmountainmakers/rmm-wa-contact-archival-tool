@@ -171,7 +171,7 @@ def contacts_w_registrations(access_token):
     if not account_id:
         return None
 
-    filter_query = f"$filter='Member' ne 'True' and 'IsArchived' eq 'False' and 'Balance' eq '0.0'"
+    filter_query = f"$filter='Member' ne 'True' and 'IsArchived' eq 'False'"
     contacts_url = f"{api_base_url}/accounts/{account_id}/contacts?$async=false&{filter_query}"
     
     contacts_response = requests.get(contacts_url, headers=headers)
@@ -183,7 +183,7 @@ def contacts_w_registrations(access_token):
     for contact in contacts:
         upcoming_event = has_upcoming_event_registrations(contact['Id'], access_token)
 
-        if upcoming_event:
+        if upcoming_event and contact['Balance'] == '0.0':
             contacts_w_registration.append(contact['Id'])
 
     if contacts_response.status_code != 200:
