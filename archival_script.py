@@ -321,7 +321,7 @@ else:
 
 number_of_members = num_members(access_token)
 
-print(number_of_members)
+print(f"test:{number_of_members}")
 
 num_non_members_with_a_balance = contacts_w_balance(access_token)
 
