@@ -131,7 +131,7 @@ def num_members(access_token):
     if not account_id:
         return None
 
-    filter_query = f"$filter='Member' eq 'True'"
+    filter_query = f"$filter='Membership Enabled' eq 'yes'"
     contacts_url = f"{api_base_url}/accounts/{account_id}/contacts?$async=false&{filter_query}"
     
     contacts_response = requests.get(contacts_url, headers=headers)
