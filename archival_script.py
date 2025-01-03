@@ -240,7 +240,7 @@ def return_archival_candidates(access_token):
         if not upcoming_event:
             balance = next((field['Value'] for field in data['FieldValues'] if field['FieldName'] == 'Balance'), '0.0')
             print(balance)
-            if balance == '0.0'
+            if balance == '0.0':
                 archival_candidates.append(contact['Id'])
 
     if contacts_response.status_code != 200:
