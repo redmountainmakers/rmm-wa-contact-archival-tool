@@ -221,7 +221,7 @@ def return_archival_candidates(access_token):
     if not account_id:
         return None
 
-    filter_query = f"$filter='Member' ne 'True' and 'IsArchived' ne 'True' and 'Balance' eq '0.0'"
+    filter_query = f"$filter='Member' ne 'True' and 'IsArchived' ne 'True'"
     contacts_url = f"{api_base_url}/accounts/{account_id}/contacts?$async=false&{filter_query}"
     
     contacts_response = requests.get(contacts_url, headers=headers)
