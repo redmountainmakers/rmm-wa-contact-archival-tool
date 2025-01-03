@@ -235,7 +235,7 @@ def return_archival_candidates(access_token):
     for contact in contacts:
         upcoming_event = has_upcoming_event_registrations(contact['Id'], access_token)
 
-        print(contact['Id')
+        print(contact['Id'])
         
         if not upcoming_event:
             archival_candidates.append(contact['Id'])
