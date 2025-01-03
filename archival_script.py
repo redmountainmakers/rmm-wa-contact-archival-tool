@@ -229,13 +229,14 @@ def return_archival_candidates(access_token):
     contacts = contacts_response.json().get("Contacts", [])
 
     contacts.sort(key=get_last_login_date, reverse=False)
-
     
     archival_candidates = []
 
     for contact in contacts:
         upcoming_event = has_upcoming_event_registrations(contact['Id'], access_token)
 
+        print(contact['Id')
+        
         if not upcoming_event:
             archival_candidates.append(contact['Id'])
 
