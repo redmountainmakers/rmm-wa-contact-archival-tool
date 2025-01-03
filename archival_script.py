@@ -183,7 +183,7 @@ def contacts_w_registrations(access_token):
     for contact in contacts:
         upcoming_event = has_upcoming_event_registrations(contact['Id'], access_token)
 
-        if upcoming_event and contact['Balance'] == '0.0':
+        if upcoming_event:
             contacts_w_registration.append(contact['Id'])
 
     if contacts_response.status_code != 200:
@@ -237,7 +237,7 @@ def return_archival_candidates(access_token):
     for contact in contacts:
         upcoming_event = has_upcoming_event_registrations(contact['Id'], access_token)
         
-        if not upcoming_event:
+        if not upcoming_event and contact['Balance'] == '0.0':
             archival_candidates.append(contact['Id'])
 
     if contacts_response.status_code != 200:
