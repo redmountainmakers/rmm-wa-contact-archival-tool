@@ -239,7 +239,7 @@ def return_archival_candidates(access_token):
         
         if not upcoming_event:
             balance = next((field['Value'] for field in contact['FieldValues'] if field['FieldName'] == 'Balance'), 0.0)
-            print(balance)
+            #print(balance)
             if balance == 0.0:
                 archival_candidates.append(contact['Id'])
 
@@ -247,7 +247,7 @@ def return_archival_candidates(access_token):
         logging.error(f"Error: Unable to retrieve contacts. Status code: {contacts_response.status_code}")
         return None
     else:
-        print(len(archival_candidates))
+        print(f"Can Archive {len(archival_candidates)}")
         return archival_candidates
 
 def has_upcoming_event_registrations(contact_id, access_token):
