@@ -231,8 +231,6 @@ def return_archival_candidates(access_token):
     contacts.sort(key=get_last_login_date, reverse=False)
     
     archival_candidates = []
-
-    print(contacts[1])
     
     for contact in contacts:
         upcoming_event = has_upcoming_event_registrations(contact['Id'], access_token)
@@ -322,6 +320,8 @@ else:
     exit()
 
 number_of_members = num_members(access_token)
+
+print(number_of_members)
 
 num_non_members_with_a_balance = contacts_w_balance(access_token)
 
