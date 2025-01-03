@@ -221,7 +221,7 @@ def return_archival_candidates(access_token):
     if not account_id:
         return None
 
-    filter_query = f"$filter='Member' ne 'True' and 'IsArchived' eq 'False' and 'Balance' eq '0.0'"
+    filter_query = f"$filter='Member' ne 'True' and 'IsArchived' ne 'True' and 'Balance' eq '0.0'"
     contacts_url = f"{api_base_url}/accounts/{account_id}/contacts?$async=false&{filter_query}"
     
     contacts_response = requests.get(contacts_url, headers=headers)
@@ -344,13 +344,13 @@ logging.info(f"{len(archival_candidates)} total candidates available for archive
 
 num = 0
 
-for contact in archival_candidates:
-    num += 1
-    if num > removal_target:
-        logging.info("Exiting after removing target contacts")
-        cleanup_log_file()
-        exit()
-    logging.info(f"Archiving contact {contact}")
-    set_contact_to_archived(contact, access_token)
+#for contact in archival_candidates:
+#    num += 1
+#    if num > removal_target:
+#        logging.info("Exiting after removing target contacts")
+#        cleanup_log_file()
+#        exit()
+#    logging.info(f"Archiving contact {contact}")
+#    set_contact_to_archived(contact, access_token)
 
 cleanup_log_file()
