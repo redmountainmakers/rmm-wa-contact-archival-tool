@@ -231,6 +231,8 @@ def return_archival_candidates(access_token):
     contacts.sort(key=get_last_login_date, reverse=False)
     
     archival_candidates = []
+
+    print(len(contacts))
     
     for contact in contacts:
         upcoming_event = has_upcoming_event_registrations(contact['Id'], access_token)
@@ -242,6 +244,7 @@ def return_archival_candidates(access_token):
         logging.error(f"Error: Unable to retrieve contacts. Status code: {contacts_response.status_code}")
         return None
     else:
+        print(len(archival_candidates))
         return archival_candidates
 
 def has_upcoming_event_registrations(contact_id, access_token):
