@@ -245,8 +245,10 @@ def return_archival_candidates(access_token):
             for field in contact['FieldValues']:
                 if field['FieldName'] == 'Balance':
                     balance = field['Value']
-                elif field['FieldName'] == 'Internal Use Admin Info' and "Ignore Archive Bot" in field['Value']:
-                    ignore_archive_bot = True
+                elif field['FieldName'] == 'Internal Use Admin Info':
+                    # Check if 'Ignore Archive Bot' exists in the list of dictionaries
+                    ignore_archive_bot = any(item.get('Label') == 'Ignore Archive Bot' for item in field['Value'])
+
 
             if contact['Id'] == 74114766:
                 print(contact['FieldValues'])
