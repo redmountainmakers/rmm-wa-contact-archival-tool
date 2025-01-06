@@ -248,7 +248,7 @@ def return_archival_candidates(access_token):
                 elif field['FieldName'] == 'Internal Use Admin Info' and "Ignore Archive Bot" in field['Value']:
                     ignore_archive_bot = True
 
-            if contact['Id'] == '74114766':
+            if contact['Id'] == 74114766:
                 print(contact)
             if balance == 0.0 and not ignore_archive_bot:
                 print(contact['Id'])
