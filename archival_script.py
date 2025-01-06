@@ -250,10 +250,11 @@ def return_archival_candidates(access_token):
                     ignore_archive_bot = any(item.get('Label') == 'Ignore Archive Bot' for item in field['Value'])
 
 
-            if contact['Id'] == 74114766:
-                print(contact['FieldValues'])
+
             if balance == 0.0 and not ignore_archive_bot:
-                #print(contact['Id'])
+                if contact['Id'] == 74114766:
+                    print(contact['FieldValues'])
+                print(contact['Id'])
                 archival_candidates.append(contact['Id'])
 
     if contacts_response.status_code != 200:
