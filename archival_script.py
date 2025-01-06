@@ -364,13 +364,13 @@ logging.info(f"{len(archival_candidates)} total candidates available for archive
 
 num = 0
 
-#for contact in archival_candidates:
-#    num += 1
-#    if num > removal_target:
-#        logging.info("Exiting after removing target contacts")
-#        cleanup_log_file()
-#        exit()
-#    logging.info(f"Archiving contact {contact}")
-#    set_contact_to_archived(contact, access_token)
+for contact in archival_candidates:
+    num += 1
+    if num > removal_target:
+        logging.info("Exiting after removing target contacts")
+        cleanup_log_file()
+        exit()
+    logging.info(f"Archiving contact {contact}")
+    set_contact_to_archived(contact, access_token)
 
 cleanup_log_file()
