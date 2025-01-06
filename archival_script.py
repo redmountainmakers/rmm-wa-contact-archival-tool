@@ -252,9 +252,6 @@ def return_archival_candidates(access_token):
 
 
             if balance == 0.0 and not ignore_archive_bot:
-                if contact['Id'] == 74114766:
-                    print(contact['FieldValues'])
-                print(contact['Id'])
                 archival_candidates.append(contact['Id'])
 
     if contacts_response.status_code != 200:
