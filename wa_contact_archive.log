@@ -4412,3 +4412,17 @@ Number of non-members with future registrations: 44
 2025-02-02 08:05:58,364 - INFO - Archiving contact 78027171
 2025-02-02 08:05:59,687 - INFO - Archiving contact 78033698
 2025-02-02 08:06:01,197 - INFO - Exiting after removing target contacts
+2025-02-03 08:04:52,089 - INFO - Starting archival script
+2025-02-03 08:04:54,286 - INFO - Currently at 193 contacts. Target is 190, attempting to remove 3 contacts.
+2025-02-03 08:05:57,878 - INFO - Currently at 156 minimum contacts. Target is 190, we have 24 contacts margin.
+Continuing to remove 3 contacts.
+2025-02-03 08:05:57,878 - INFO - Minimum contact makeup:
+Number of members: 83
+Number of non-members with a balance: 29
+Number of non-members with future registrations: 44
+2025-02-03 08:06:56,625 - INFO - 45 total candidates available for archive
+2025-02-03 08:06:56,625 - INFO - Archiving contact 78760250
+2025-02-03 08:06:58,402 - INFO - Archiving contact 75806322
+2025-02-03 08:06:59,289 - ERROR - Error: Unable to update contact. Status code: 400
+2025-02-03 08:06:59,289 - INFO - Archiving contact 78035383
+2025-02-03 08:07:00,716 - INFO - Exiting after removing target contacts
