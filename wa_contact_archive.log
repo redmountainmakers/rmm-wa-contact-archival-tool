@@ -4479,3 +4479,47 @@ Number of non-members with future registrations: 40
 2025-02-07 08:06:47,734 - INFO - Archiving contact 78895913
 2025-02-07 08:06:49,141 - INFO - Archiving contact 62689858
 2025-02-07 08:06:50,656 - INFO - Exiting after removing target contacts
+2025-02-09 08:03:56,962 - INFO - Starting archival script
+2025-02-09 08:04:00,207 - INFO - Currently at 222 contacts. Target is 190, attempting to remove 32 contacts.
+2025-02-09 08:06:13,965 - INFO - Currently at 174 minimum contacts. Target is 190, we have 6 contacts margin.
+Continuing to remove 32 contacts.
+2025-02-09 08:06:13,965 - INFO - Minimum contact makeup:
+Number of members: 83
+Number of non-members with a balance: 26
+Number of non-members with future registrations: 65
+2025-02-09 08:08:21,247 - INFO - 54 total candidates available for archive
+2025-02-09 08:08:21,247 - INFO - Archiving contact 79011562
+2025-02-09 08:08:23,668 - INFO - Archiving contact 78772692
+2025-02-09 08:08:25,744 - INFO - Archiving contact 77509615
+2025-02-09 08:08:27,718 - INFO - Archiving contact 79009478
+2025-02-09 08:08:29,782 - INFO - Archiving contact 75806322
+2025-02-09 08:08:31,244 - ERROR - Error: Unable to update contact. Status code: 400
+2025-02-09 08:08:31,244 - INFO - Archiving contact 78045415
+2025-02-09 08:08:33,297 - INFO - Archiving contact 78047421
+2025-02-09 08:08:35,250 - INFO - Archiving contact 78047431
+2025-02-09 08:08:37,257 - INFO - Archiving contact 78047835
+2025-02-09 08:08:39,303 - INFO - Archiving contact 78049038
+2025-02-09 08:08:41,269 - INFO - Archiving contact 78029380
+2025-02-09 08:08:43,335 - INFO - Archiving contact 78053318
+2025-02-09 08:08:45,285 - INFO - Archiving contact 78053508
+2025-02-09 08:08:47,306 - INFO - Archiving contact 78055819
+2025-02-09 08:08:49,393 - INFO - Archiving contact 78056098
+2025-02-09 08:08:51,295 - INFO - Archiving contact 78056162
+2025-02-09 08:08:53,309 - INFO - Archiving contact 78059858
+2025-02-09 08:08:55,406 - INFO - Archiving contact 78056462
+2025-02-09 08:08:57,375 - INFO - Archiving contact 77856546
+2025-02-09 08:08:58,858 - ERROR - Error: Unable to update contact. Status code: 400
+2025-02-09 08:08:58,858 - INFO - Archiving contact 78076074
+2025-02-09 08:09:00,761 - INFO - Archiving contact 77840578
+2025-02-09 08:09:03,261 - INFO - Archiving contact 78095652
+2025-02-09 08:09:05,198 - INFO - Archiving contact 78110382
+2025-02-09 08:09:07,615 - INFO - Archiving contact 75951073
+2025-02-09 08:09:09,570 - INFO - Archiving contact 78167089
+2025-02-09 08:09:11,634 - INFO - Archiving contact 78171909
+2025-02-09 08:09:13,669 - INFO - Archiving contact 78185833
+2025-02-09 08:09:15,616 - INFO - Archiving contact 78188471
+2025-02-09 08:09:17,618 - INFO - Archiving contact 78192143
+2025-02-09 08:09:19,563 - INFO - Archiving contact 78199869
+2025-02-09 08:09:21,652 - INFO - Archiving contact 78185816
+2025-02-09 08:09:23,587 - INFO - Archiving contact 78212091
+2025-02-09 08:09:25,532 - INFO - Exiting after removing target contacts
