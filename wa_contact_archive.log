@@ -5005,3 +5005,5 @@ Number of non-members with future registrations: 20
 2025-03-21 08:06:57,919 - INFO - Archiving contact 79913261
 2025-03-21 08:06:59,474 - INFO - Archiving contact 78647791
 2025-03-21 08:07:00,907 - INFO - Exiting after removing target contacts
+2025-03-22 08:04:17,667 - INFO - Starting archival script
+2025-03-22 08:04:19,928 - INFO - Currently at 190 contacts. Target is 190, no action required. Exiting
