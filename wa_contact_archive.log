@@ -6217,3 +6217,5 @@ Number of non-members with future registrations: 9
 2025-07-02 08:07:19,669 - INFO - 62 total candidates available for archive
 2025-07-02 08:07:19,669 - INFO - Archiving contact 86607149
 2025-07-02 08:07:21,682 - INFO - Exiting after removing target contacts
+2025-07-03 08:05:20,650 - INFO - Starting archival script
+2025-07-03 08:05:23,068 - INFO - Currently at 190 contacts. Target is 190, no action required. Exiting
