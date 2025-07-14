@@ -6310,3 +6310,5 @@ Number of non-members with future registrations: 12
 2025-07-13 08:06:46,630 - INFO - Archiving contact 82027041
 2025-07-13 08:06:48,584 - INFO - Archiving contact 82087191
 2025-07-13 08:06:50,549 - INFO - Exiting after removing target contacts
+2025-07-14 08:06:03,517 - INFO - Starting archival script
+2025-07-14 08:06:06,393 - INFO - Currently at 190 contacts. Target is 190, no action required. Exiting
