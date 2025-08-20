@@ -6770,3 +6770,20 @@ Number of non-members with future registrations: 25
 2025-08-19 08:07:34,790 - INFO - Archiving contact 90150678
 2025-08-19 08:07:36,302 - INFO - Archiving contact 90150958
 2025-08-19 08:07:37,758 - INFO - Exiting after removing target contacts
+2025-08-20 08:05:09,036 - INFO - Starting archival script
+2025-08-20 08:05:12,241 - INFO - Currently at 194 contacts. Target is 190, attempting to remove 4 contacts.
+2025-08-20 08:06:31,616 - INFO - Currently at 172 minimum contacts. Target is 190, we have 8 contacts margin.
+Continuing to remove 4 contacts.
+2025-08-20 08:06:31,616 - INFO - Minimum contact makeup:
+Number of members: 96
+Number of non-members with a balance: 50
+Number of non-members with future registrations: 26
+2025-08-20 08:07:45,657 - INFO - 30 total candidates available for archive
+2025-08-20 08:07:45,658 - INFO - Archiving contact 82107085
+2025-08-20 08:07:47,161 - ERROR - Error: Unable to update contact. Status code: 400
+2025-08-20 08:07:47,163 - INFO - Archiving contact 57321588
+2025-08-20 08:07:48,356 - ERROR - Error: Unable to update contact. Status code: 400
+2025-08-20 08:07:48,358 - INFO - Archiving contact 79011785
+2025-08-20 08:07:49,658 - ERROR - Error: Unable to update contact. Status code: 400
+2025-08-20 08:07:49,660 - INFO - Archiving contact 90155942
+2025-08-20 08:07:51,520 - INFO - Exiting after removing target contacts
