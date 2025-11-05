@@ -8079,3 +8079,22 @@ Number of non-members with future registrations: 27
 2025-11-04 08:07:35,328 - INFO - Archiving contact 90150173
 2025-11-04 08:07:36,956 - INFO - Archiving contact 70315906
 2025-11-04 08:07:38,574 - INFO - Exiting after removing target contacts
+2025-11-05 08:05:15,640 - INFO - Starting archival script
+2025-11-05 08:05:18,266 - INFO - Currently at 195 contacts. Target is 190, attempting to remove 5 contacts.
+2025-11-05 08:06:29,390 - INFO - Currently at 169 minimum contacts. Target is 190, we have 11 contacts margin.
+Continuing to remove 5 contacts.
+2025-11-05 08:06:29,390 - INFO - Minimum contact makeup:
+Number of members: 86
+Number of non-members with a balance: 56
+Number of non-members with future registrations: 27
+2025-11-05 08:07:28,993 - INFO - 38 total candidates available for archive
+2025-11-05 08:07:28,994 - INFO - Archiving contact 82107085
+2025-11-05 08:07:30,212 - ERROR - Error: Unable to update contact. Status code: 400
+2025-11-05 08:07:30,215 - INFO - Archiving contact 57321588
+2025-11-05 08:07:31,223 - ERROR - Error: Unable to update contact. Status code: 400
+2025-11-05 08:07:31,225 - INFO - Archiving contact 79011785
+2025-11-05 08:07:32,153 - ERROR - Error: Unable to update contact. Status code: 400
+2025-11-05 08:07:32,155 - INFO - Archiving contact 70560457
+2025-11-05 08:07:33,222 - ERROR - Error: Unable to update contact. Status code: 400
+2025-11-05 08:07:33,224 - INFO - Archiving contact 57872628
+2025-11-05 08:07:37,280 - INFO - Exiting after removing target contacts
