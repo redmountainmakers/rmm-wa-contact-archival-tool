@@ -151,7 +151,7 @@ def num_contacts(access_token):
     if not account_id:
         return None
 
- url = f"{api_base_url}/accounts/{account_id}/contacts"
+    url = f"{api_base_url}/accounts/{account_id}/contacts"
     top = 100
     skip = 0
     total = 0
