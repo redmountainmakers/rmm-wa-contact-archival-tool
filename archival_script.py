@@ -143,7 +143,7 @@ def num_members(access_token):
         return len(contacts_response.json().get("Contacts", []))
 
 def num_contacts(access_token):
-    """Finds a contact by Discord username."""
+    """returns the number of contacts that are not archived""" 
     api_base_url = 'https://api.wildapricot.org/v2.2'
     headers = {'Authorization': f'Bearer {access_token}', 'Content-Type': 'application/json', 'Accept': 'application/json'}
     
@@ -151,16 +151,34 @@ def num_contacts(access_token):
     if not account_id:
         return None
 
-    filter_query = f"$filter='IsArchived' eq 'False'"
-    contacts_url = f"{api_base_url}/accounts/{account_id}/contacts?$async=false&{filter_query}"
-    
-    contacts_response = requests.get(contacts_url, headers=headers)
+ url = f"{api_base_url}/accounts/{account_id}/contacts"
+    top = 100
+    skip = 0
+    total = 0
 
-    if contacts_response.status_code != 200:
-        logging.error(f"Error: Unable to retrieve contacts. Status code: {contacts_response.status_code}")
-        return None
-    else:
-        return len(contacts_response.json().get("Contacts", []))
+    while True:
+        params = {
+            "$async": "false",
+            "$filter": "isArchived eq false",
+            "$top": top,
+            "$skip": skip,
+        }
+
+        r = requests.get(url, headers=headers, params=params)
+        if r.status_code != 200:
+            logging.error(f"Unable to retrieve contacts. Status code: {r.status_code}, body: {r.text}")
+            return None
+
+        contacts = r.json().get("Contacts", [])
+        total += len(contacts)
+
+        # done when the API returns fewer than a full page
+        if len(contacts) < top:
+            break
+
+        skip += top
+
+    return total
 
 def contacts_w_registrations(access_token):
     """Finds a contact by Discord username."""
