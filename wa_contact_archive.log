@@ -8414,3 +8414,6 @@ Number of non-members with future registrations: 33
 2026-01-25 15:26:33,375 - INFO - Currently at 100 contacts. Target is 190, no action required. Exiting
 2026-01-25 15:35:54,158 - INFO - Starting archival script
 2026-01-25 15:35:55,877 - INFO - Currently at 100 contacts. Target is 190, no action required. Exiting
+2026-01-25 15:55:41,321 - INFO - Starting archival script
+2026-01-25 15:55:47,914 - INFO - Currently at 322 contacts. Target is 190, attempting to remove 132 contacts.
+2026-01-25 15:57:40,418 - INFO - Warning: Currently at 194 contacts. Target is 190, we have more contacts than the target. Need to consider upgrading our plan.
