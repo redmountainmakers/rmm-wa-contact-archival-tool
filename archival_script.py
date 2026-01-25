@@ -357,10 +357,13 @@ else:
     exit()
 
 number_of_members = num_members(access_token)
+print(f"number of members is  " {number_of_members})
 
 num_non_members_with_a_balance = contacts_w_balance(access_token)
+print(f"number of non members with a balance is " {num_non_members_with_a_balance})
 
 num_non_members_future_registration = contacts_w_registrations(access_token)
+print(f"number of non members with future registrations is " {num_non_members_future_registration})
 
 minimum_contacts = number_of_members + num_non_members_with_a_balance + num_non_members_future_registration
 
