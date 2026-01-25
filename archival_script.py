@@ -189,26 +189,41 @@ def contacts_w_registrations(access_token):
     if not account_id:
         return None
 
-    filter_query = f"$filter='Member' ne 'True' and 'IsArchived' eq 'False'"
-    contacts_url = f"{api_base_url}/accounts/{account_id}/contacts?$async=false&{filter_query}"
-    
-    contacts_response = requests.get(contacts_url, headers=headers)
 
-    contacts = contacts_response.json().get("Contacts", [])
-    
+    url = f"{api_base_url}/accounts/{account_id}/contacts"
+
+    top = 100
+    skip = 0
     contacts_w_registration = []
 
-    for contact in contacts:
-        upcoming_event = has_upcoming_event_registrations(contact['Id'], access_token)
+    while True:
+        params = {
+            "$async": "false",
+            "$filter": "Member eq false and isArchived eq false",
+            "$top": top,
+            "$skip": skip,
+        }
 
-        if upcoming_event:
-            contacts_w_registration.append(contact['Id'])
+        r = requests.get(url, headers=headers, params=params)
+        if r.status_code != 200:
+            logging.error(f"Unable to retrieve contacts. Status code: {r.status_code}, body: {r.text}")
+            return None
 
-    if contacts_response.status_code != 200:
-        logging.error(f"Error: Unable to retrieve contacts. Status code: {contacts_response.status_code}")
-        return None
-    else:
-        return len(contacts_w_registration)
+        contacts = r.json().get("Contacts", [])
+
+        for contact in contacts:
+            contact_id = contact.get("Id")
+            if not contact_id:
+                continue
+
+            if has_upcoming_event_registrations(contact_id, access_token):
+                contacts_w_registration.append(contact_id)
+
+        if len(contacts) < top:
+            break
+
+        skip += top
+    return len(contacts_w_registration)
 
 def contacts_w_balance(access_token):
     """Finds a contact by Discord username."""
