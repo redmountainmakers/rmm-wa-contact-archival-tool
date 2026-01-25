@@ -345,7 +345,7 @@ num_contacts = num_contacts(access_token)
 
 print(num_contacts)
 
-contact_target = 190
+contact_target = 300
 
 removal_target = num_contacts - contact_target
 
