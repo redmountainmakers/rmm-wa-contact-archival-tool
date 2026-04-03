@@ -9127,3 +9127,15 @@ Number of non-members with future registrations: 28
 2026-04-02 08:25:56,217 - INFO - Archiving contact 96210122
 2026-04-02 08:25:57,864 - INFO - Archiving contact 96408712
 2026-04-02 08:25:59,783 - INFO - Exiting after removing target contacts
+2026-04-03 08:18:40,223 - INFO - Starting archival script
+2026-04-03 08:18:44,787 - INFO - Currently at 302 contacts. Target is 300, attempting to remove 2 contacts.
+2026-04-03 08:20:27,944 - INFO - Currently at 215 minimum contacts. Target is 300, we have 75 contacts margin.
+Continuing to remove 2 contacts.
+2026-04-03 08:20:27,944 - INFO - Minimum contact makeup:
+Number of members: 86
+Number of non-members with a balance: 100
+Number of non-members with future registrations: 29
+2026-04-03 08:21:12,741 - INFO - 19 total candidates available for archive
+2026-04-03 08:21:12,741 - INFO - Archiving contact 95936208
+2026-04-03 08:21:14,293 - INFO - Archiving contact 96153706
+2026-04-03 08:21:15,672 - INFO - Exiting after removing target contacts
