@@ -9205,3 +9205,19 @@ Number of non-members with future registrations: 38
 2026-04-08 08:29:17,842 - INFO - Archiving contact 95874711
 2026-04-08 08:29:19,500 - INFO - Archiving contact 96667002
 2026-04-08 08:29:21,038 - INFO - Exiting after removing target contacts
+2026-04-09 08:32:52,348 - INFO - Starting archival script
+2026-04-09 08:32:57,606 - INFO - Currently at 305 contacts. Target is 300, attempting to remove 5 contacts.
+2026-04-09 08:34:45,040 - INFO - Currently at 229 minimum contacts. Target is 300, we have 61 contacts margin.
+Continuing to remove 5 contacts.
+2026-04-09 08:34:45,040 - INFO - Minimum contact makeup:
+Number of members: 88
+Number of non-members with a balance: 100
+Number of non-members with future registrations: 41
+2026-04-09 08:35:33,503 - INFO - 10 total candidates available for archive
+2026-04-09 08:35:33,503 - INFO - Archiving contact 94183364
+2026-04-09 08:35:34,520 - ERROR - Error: Unable to update contact. Status code: 400
+2026-04-09 08:35:34,523 - INFO - Archiving contact 96826019
+2026-04-09 08:35:36,072 - INFO - Archiving contact 96831686
+2026-04-09 08:35:37,948 - INFO - Archiving contact 96836701
+2026-04-09 08:35:39,402 - INFO - Archiving contact 95932962
+2026-04-09 08:35:40,893 - INFO - Exiting after removing target contacts
