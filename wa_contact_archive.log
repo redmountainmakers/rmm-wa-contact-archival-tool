@@ -9221,3 +9221,18 @@ Number of non-members with future registrations: 41
 2026-04-09 08:35:37,948 - INFO - Archiving contact 96836701
 2026-04-09 08:35:39,402 - INFO - Archiving contact 95932962
 2026-04-09 08:35:40,893 - INFO - Exiting after removing target contacts
+2026-04-10 08:32:36,807 - INFO - Starting archival script
+2026-04-10 08:32:41,934 - INFO - Currently at 304 contacts. Target is 300, attempting to remove 4 contacts.
+2026-04-10 08:34:27,801 - INFO - Currently at 231 minimum contacts. Target is 300, we have 59 contacts margin.
+Continuing to remove 4 contacts.
+2026-04-10 08:34:27,802 - INFO - Minimum contact makeup:
+Number of members: 88
+Number of non-members with a balance: 100
+Number of non-members with future registrations: 43
+2026-04-10 08:35:16,702 - INFO - 7 total candidates available for archive
+2026-04-10 08:35:16,703 - INFO - Archiving contact 94183364
+2026-04-10 08:35:17,765 - ERROR - Error: Unable to update contact. Status code: 400
+2026-04-10 08:35:17,768 - INFO - Archiving contact 95874711
+2026-04-10 08:35:19,633 - INFO - Archiving contact 91072832
+2026-04-10 08:35:21,027 - INFO - Archiving contact 96882050
+2026-04-10 08:35:22,800 - INFO - Exiting after removing target contacts
