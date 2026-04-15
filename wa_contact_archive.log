@@ -9277,3 +9277,5 @@ Number of non-members with future registrations: 41
 2026-04-13 08:46:06,709 - INFO - Exiting after removing target contacts
 2026-04-14 08:35:03,794 - INFO - Starting archival script
 2026-04-14 08:35:09,609 - INFO - Currently at 300 contacts. Target is 300, no action required. Exiting
+2026-04-15 08:35:09,571 - INFO - Starting archival script
+2026-04-15 08:35:14,111 - INFO - Currently at 300 contacts. Target is 300, no action required. Exiting
