@@ -9279,3 +9279,15 @@ Number of non-members with future registrations: 41
 2026-04-14 08:35:09,609 - INFO - Currently at 300 contacts. Target is 300, no action required. Exiting
 2026-04-15 08:35:09,571 - INFO - Starting archival script
 2026-04-15 08:35:14,111 - INFO - Currently at 300 contacts. Target is 300, no action required. Exiting
+2026-04-16 08:35:03,691 - INFO - Starting archival script
+2026-04-16 08:35:09,919 - INFO - Currently at 302 contacts. Target is 300, attempting to remove 2 contacts.
+2026-04-16 08:37:43,865 - INFO - Currently at 213 minimum contacts. Target is 300, we have 77 contacts margin.
+Continuing to remove 2 contacts.
+2026-04-16 08:37:43,865 - INFO - Minimum contact makeup:
+Number of members: 83
+Number of non-members with a balance: 100
+Number of non-members with future registrations: 30
+2026-04-16 08:38:53,400 - INFO - 10 total candidates available for archive
+2026-04-16 08:38:53,401 - INFO - Archiving contact 97124458
+2026-04-16 08:38:55,780 - INFO - Archiving contact 97151650
+2026-04-16 08:38:57,550 - INFO - Exiting after removing target contacts
