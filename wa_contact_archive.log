@@ -9388,3 +9388,18 @@ Number of non-members with future registrations: 22
 2026-04-24 08:45:30,483 - INFO - Archiving contact 94183364
 2026-04-24 08:45:31,509 - ERROR - Error: Unable to update contact. Status code: 400
 2026-04-24 08:45:31,511 - INFO - Exiting after removing target contacts
+2026-04-25 08:20:58,208 - INFO - Starting archival script
+2026-04-25 08:21:02,881 - INFO - Currently at 304 contacts. Target is 300, attempting to remove 4 contacts.
+2026-04-25 08:23:14,295 - INFO - Currently at 210 minimum contacts. Target is 300, we have 80 contacts margin.
+Continuing to remove 4 contacts.
+2026-04-25 08:23:14,295 - INFO - Minimum contact makeup:
+Number of members: 85
+Number of non-members with a balance: 100
+Number of non-members with future registrations: 25
+2026-04-25 08:24:13,731 - INFO - 13 total candidates available for archive
+2026-04-25 08:24:13,731 - INFO - Archiving contact 94183364
+2026-04-25 08:24:15,009 - ERROR - Error: Unable to update contact. Status code: 400
+2026-04-25 08:24:15,011 - INFO - Archiving contact 96237769
+2026-04-25 08:24:17,117 - INFO - Archiving contact 96263790
+2026-04-25 08:24:18,773 - INFO - Archiving contact 95924307
+2026-04-25 08:24:20,415 - INFO - Exiting after removing target contacts
