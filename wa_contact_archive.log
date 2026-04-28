@@ -9433,3 +9433,21 @@ Number of non-members with future registrations: 27
 2026-04-27 08:55:40,607 - INFO - Archiving contact 96504011
 2026-04-27 08:55:42,220 - INFO - Archiving contact 96505654
 2026-04-27 08:55:44,090 - INFO - Exiting after removing target contacts
+2026-04-28 08:50:51,604 - INFO - Starting archival script
+2026-04-28 08:50:56,391 - INFO - Currently at 306 contacts. Target is 300, attempting to remove 6 contacts.
+2026-04-28 08:52:46,472 - INFO - Currently at 215 minimum contacts. Target is 300, we have 75 contacts margin.
+Continuing to remove 6 contacts.
+2026-04-28 08:52:46,472 - INFO - Minimum contact makeup:
+Number of members: 86
+Number of non-members with a balance: 100
+Number of non-members with future registrations: 29
+2026-04-28 08:53:34,994 - INFO - 8 total candidates available for archive
+2026-04-28 08:53:34,994 - INFO - Archiving contact 94183364
+2026-04-28 08:53:35,980 - ERROR - Error: Unable to update contact. Status code: 400
+2026-04-28 08:53:35,982 - INFO - Archiving contact 78096939
+2026-04-28 08:53:36,894 - ERROR - Error: Unable to update contact. Status code: 400
+2026-04-28 08:53:36,896 - INFO - Archiving contact 97047262
+2026-04-28 08:53:38,300 - INFO - Archiving contact 97195397
+2026-04-28 08:53:39,773 - INFO - Archiving contact 97279477
+2026-04-28 08:53:41,285 - INFO - Archiving contact 95814023
+2026-04-28 08:53:42,640 - INFO - Exiting after removing target contacts
