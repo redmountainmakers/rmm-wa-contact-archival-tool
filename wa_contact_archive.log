@@ -9545,3 +9545,21 @@ Number of non-members with future registrations: 33
 2026-05-05 08:48:59,102 - ERROR - Error: Unable to update contact. Status code: 400
 2026-05-05 08:48:59,105 - INFO - Archiving contact 78096939
 2026-05-05 08:48:59,912 - ERROR - Error: Unable to update contact. Status code: 400
+2026-05-07 08:55:02,394 - INFO - Starting archival script
+2026-05-07 08:55:07,522 - INFO - Currently at 310 contacts. Target is 300, attempting to remove 10 contacts.
+2026-05-07 08:57:23,246 - INFO - Currently at 214 minimum contacts. Target is 300, we have 76 contacts margin.
+Continuing to remove 10 contacts.
+2026-05-07 08:57:23,246 - INFO - Minimum contact makeup:
+Number of members: 85
+Number of non-members with a balance: 100
+Number of non-members with future registrations: 29
+2026-05-07 08:58:23,469 - INFO - 7 total candidates available for archive
+2026-05-07 08:58:23,469 - INFO - Archiving contact 97397153
+2026-05-07 08:58:25,578 - INFO - Archiving contact 94183364
+2026-05-07 08:58:26,663 - ERROR - Error: Unable to update contact. Status code: 400
+2026-05-07 08:58:26,666 - INFO - Archiving contact 78096939
+2026-05-07 08:58:27,703 - ERROR - Error: Unable to update contact. Status code: 400
+2026-05-07 08:58:27,706 - INFO - Archiving contact 97399248
+2026-05-07 08:58:29,382 - INFO - Archiving contact 97420459
+2026-05-07 08:58:31,187 - INFO - Archiving contact 97428322
+2026-05-07 08:58:33,050 - INFO - Archiving contact 97393761
