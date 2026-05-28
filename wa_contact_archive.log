@@ -9842,3 +9842,22 @@ Number of non-members with future registrations: 20
 2026-05-27 09:12:21,439 - INFO - Archiving contact 97312088
 2026-05-27 09:12:22,810 - INFO - Archiving contact 97465023
 2026-05-27 09:12:24,265 - INFO - Archiving contact 97607087
+2026-05-28 09:16:07,299 - INFO - Starting archival script
+2026-05-28 09:16:12,883 - INFO - Currently at 308 contacts. Target is 300, attempting to remove 8 contacts.
+2026-05-28 09:19:02,551 - INFO - Currently at 198 minimum contacts. Target is 300, we have 92 contacts margin.
+Continuing to remove 8 contacts.
+2026-05-28 09:19:02,551 - INFO - Minimum contact makeup:
+Number of members: 84
+Number of non-members with a balance: 100
+Number of non-members with future registrations: 14
+2026-05-28 09:20:16,020 - INFO - 8 total candidates available for archive
+2026-05-28 09:20:16,020 - INFO - Archiving contact 95922354
+2026-05-28 09:20:18,423 - INFO - Archiving contact 94183364
+2026-05-28 09:20:19,667 - ERROR - Error: Unable to update contact. Status code: 400
+2026-05-28 09:20:19,669 - INFO - Archiving contact 78096939
+2026-05-28 09:20:20,937 - ERROR - Error: Unable to update contact. Status code: 400
+2026-05-28 09:20:20,939 - INFO - Archiving contact 97269115
+2026-05-28 09:20:22,831 - INFO - Archiving contact 97467202
+2026-05-28 09:20:24,738 - INFO - Archiving contact 97858016
+2026-05-28 09:20:26,534 - INFO - Archiving contact 97926285
+2026-05-28 09:20:28,340 - INFO - Archiving contact 97962393
