@@ -9861,3 +9861,19 @@ Number of non-members with future registrations: 14
 2026-05-28 09:20:24,738 - INFO - Archiving contact 97858016
 2026-05-28 09:20:26,534 - INFO - Archiving contact 97926285
 2026-05-28 09:20:28,340 - INFO - Archiving contact 97962393
+2026-05-29 09:11:16,110 - INFO - Starting archival script
+2026-05-29 09:11:20,552 - INFO - Currently at 308 contacts. Target is 300, attempting to remove 8 contacts.
+2026-05-29 09:13:01,929 - INFO - Currently at 202 minimum contacts. Target is 300, we have 88 contacts margin.
+Continuing to remove 8 contacts.
+2026-05-29 09:13:01,930 - INFO - Minimum contact makeup:
+Number of members: 84
+Number of non-members with a balance: 100
+Number of non-members with future registrations: 18
+2026-05-29 09:13:44,067 - INFO - 5 total candidates available for archive
+2026-05-29 09:13:44,067 - INFO - Archiving contact 78083094
+2026-05-29 09:13:45,642 - INFO - Archiving contact 97412808
+2026-05-29 09:13:47,137 - INFO - Archiving contact 94183364
+2026-05-29 09:13:48,023 - ERROR - Error: Unable to update contact. Status code: 400
+2026-05-29 09:13:48,027 - INFO - Archiving contact 78096939
+2026-05-29 09:13:48,896 - ERROR - Error: Unable to update contact. Status code: 400
+2026-05-29 09:13:48,900 - INFO - Archiving contact 96329689
