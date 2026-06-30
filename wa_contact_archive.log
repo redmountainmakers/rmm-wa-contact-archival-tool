@@ -10291,3 +10291,22 @@ Number of non-members with future registrations: 33
 2026-06-29 09:41:49,558 - INFO - 1 total candidates available for archive
 2026-06-29 09:41:49,558 - INFO - Archiving contact 94183364
 2026-06-29 09:41:51,087 - ERROR - Error: Unable to update contact. Status code: 400
+2026-06-30 09:08:12,572 - INFO - Starting archival script
+2026-06-30 09:08:18,534 - INFO - Currently at 331 contacts. Target is 300, attempting to remove 31 contacts.
+2026-06-30 09:11:51,605 - INFO - Currently at 205 minimum contacts. Target is 300, we have 85 contacts margin.
+Continuing to remove 31 contacts.
+2026-06-30 09:11:51,605 - INFO - Minimum contact makeup:
+Number of members: 86
+Number of non-members with a balance: 100
+Number of non-members with future registrations: 19
+2026-06-30 09:13:14,576 - INFO - 9 total candidates available for archive
+2026-06-30 09:13:14,576 - INFO - Archiving contact 94183364
+2026-06-30 09:13:16,474 - ERROR - Error: Unable to update contact. Status code: 400
+2026-06-30 09:13:16,477 - INFO - Archiving contact 98280872
+2026-06-30 09:13:18,565 - INFO - Archiving contact 98337989
+2026-06-30 09:13:20,694 - INFO - Archiving contact 98338585
+2026-06-30 09:13:22,597 - INFO - Archiving contact 98350619
+2026-06-30 09:13:24,561 - INFO - Archiving contact 98353328
+2026-06-30 09:13:26,559 - INFO - Archiving contact 98357530
+2026-06-30 09:13:28,512 - INFO - Archiving contact 98365748
+2026-06-30 09:13:30,432 - INFO - Archiving contact 98368319
